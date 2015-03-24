@@ -1,9 +1,9 @@
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="_DefaultMasterPage.master.cs" Inherits="RobinTran.MasterPage._DefaultMasterPage" %>
-
 <%@ Register TagPrefix="Partial" TagName="Header" Src="~/Partials/_Header.ascx" %>
 <%@ Register TagPrefix="Partial" TagName="Menu" Src="~/Partials/_Menu.ascx" %>
 <%@ Register TagPrefix="Partial" TagName="Footer" Src="~/Partials/_Footer.ascx" %>
 <%@ Register TagPrefix="Partial" TagName="RightComponents" Src="~/Partials/_RightComponents.ascx" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
