@@ -4,7 +4,10 @@
         <li id="home"><a href="http://www.free-css.com/">Home</a></li>
         <li id="who" class="activelink"><a href="http://www.free-css.com/">About</a></li>
         <li id="prod"><a href="http://www.free-css.com/">Product</a></li>
-        <li id="serv"><a href="http://www.free-css.com/">Services</a></li>
-        <li id="cont"><a href="http://www.free-css.com/">Contact us</a></li>
+        <li>
+            <asp:LinkButton ID="btnShowModal" runat="server" Text="Show Modal" 
+                data-target="#pnlModal"
+                data-toggle="modal" OnClientClick="javascript:return false;"></asp:LinkButton>
+        </li>
     </ul>
 </div>
