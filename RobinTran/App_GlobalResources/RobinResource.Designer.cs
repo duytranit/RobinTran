@@ -61,11 +61,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to testing.
+        ///   Looks up a localized string similar to Home.
         /// </summary>
-        internal static string test {
+        internal static string mnHome {
             get {
-                return ResourceManager.GetString("test", resourceCulture);
+                return ResourceManager.GetString("mnHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign In.
+        /// </summary>
+        internal static string mnSignIn {
+            get {
+                return ResourceManager.GetString("mnSignIn", resourceCulture);
             }
         }
     }

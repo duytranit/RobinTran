@@ -13,12 +13,21 @@ namespace RobinTran.MasterPage {
     public partial class _Menu {
         
         /// <summary>
-        /// btnShowModal control.
+        /// btHome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnShowModal;
+        protected global::System.Web.UI.WebControls.LinkButton btHome;
+        
+        /// <summary>
+        /// btSignIn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btSignIn;
     }
 }

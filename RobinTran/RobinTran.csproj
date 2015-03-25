@@ -131,10 +131,12 @@
     <Content Include="Content\images\c_br.gif" />
     <Content Include="Content\images\c_tl.gif" />
     <Content Include="Content\images\c_tr.gif" />
+    <Content Include="Content\images\ENFlag.png" />
     <Content Include="Content\images\home.gif" />
     <Content Include="Content\images\last.gif" />
     <Content Include="Content\images\mail.gif" />
     <Content Include="Content\images\right.gif" />
+    <Content Include="Content\images\VNFlag.png" />
     <Content Include="Content\style.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
