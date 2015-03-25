@@ -1,0 +1,30 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="_AdminMasterPage.master.cs" Inherits="RobinTran.MasterPage._AdminMasterPage" %>
+<%@ Register TagPrefix="Partial" TagName="Header" Src="~/Partials/_Header.ascx" %>
+<%@ Register TagPrefix="Partial" TagName="Menu" Src="~/Partials/Admin/_Menu.ascx" %>
+<%@ Register TagPrefix="Partial" TagName="Footer" Src="~/Partials/_Footer.ascx" %>
+<%@ Register TagPrefix="Partial" TagName="RightComponents" Src="~/Partials/_RightComponents.ascx" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Robin Tran</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <Partial:Header runat="server"></Partial:Header>
+        <Partial:Menu runat="server"></Partial:Menu>
+        <div id="container">
+            <div id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <Partial:RightComponents runat="server"></Partial:RightComponents>
+        </div>
+        <Partial:Footer runat="server"></Partial:Footer>
+    </form>
+</body>
+</html>
