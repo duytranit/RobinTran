@@ -14,16 +14,5 @@ namespace RobinTran
         {
 
         }
-
-        protected void showDialog_Click(object sender, EventArgs e)
-        {
-            RadWindow newWindow = new RadWindow();
-            newWindow.NavigateUrl = "~/Views/Test.aspx";
-            newWindow.VisibleOnPageLoad = true;
-            newWindow.Modal = true;
-            newWindow.VisibleTitlebar = false;
-            newWindow.VisibleStatusbar = false;
-            RadWindowManager1.Windows.Add(newWindow); 
-        }
     }
 }
