@@ -5,7 +5,7 @@
         <li id="who" class="activelink"><a href="http://www.free-css.com/">About</a></li>
         <li id="prod"><a href="http://www.free-css.com/">Product</a></li>
         <li>
-            <asp:LinkButton ID="btnShowModal" runat="server" Text="Show Modal" 
+            <asp:LinkButton ID="btnShowModal" runat="server" Text="Sign-in" 
                 data-target="#pnlModal"
                 data-toggle="modal" OnClientClick="javascript:return false;"></asp:LinkButton>
         </li>

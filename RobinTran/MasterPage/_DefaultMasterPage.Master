@@ -34,21 +34,38 @@
         <!-- Bootstrap popup -->
         <asp:Panel ID="pnlModal" runat="server" role="dialog" CssClass="modal fade">
             <asp:Panel ID="pnlInner" runat="server" CssClass="modal-dialog">
-                <asp:Panel ID="pnlContent" CssClass="modal-content" runat="server">
+                <asp:Panel ID="pnlContent" CssClass="modal-content" runat="server" Width="280px" Style="margin-top: 25%; margin-left: 30%;">
                     <asp:Panel runat="server" class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">
                             <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
-                        <h4 class="modal-title">Bootstrap Modal Dialog in ASP.NET</h4>
+                        <h4 class="modal-title">Sign in</h4>
                     </asp:Panel>
                     <asp:Panel runat="server" class="modal-body">
-                        <p>
-                            This is an example of bootstrap modal pop-up
-                        </p>
+                        <table>
+                            <tr>
+                                <td>
+                                    Email:
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Password:
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+                                </td>
+                            </tr>
+                        </table>
+                        <asp:Button ID="btSignIn" runat="server" Text="Sign in" OnClick="btSignIn_Click" 
+                            Style="margin-top: 20px;"/>
                     </asp:Panel>
-                    <asp:Panel runat="server" class="modal-footer">
+                    <!--<asp:Panel runat="server" class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </asp:Panel>
+                    </asp:Panel>-->
                 </asp:Panel>
             </asp:Panel>
         </asp:Panel>

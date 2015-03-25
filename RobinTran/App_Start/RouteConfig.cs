@@ -11,6 +11,9 @@ namespace RobinTran
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.EnableFriendlyUrls();
+            routes.MapPageRoute("DefaultPage", "", "~/Default.aspx");
+
+            routes.MapPageRoute("AdminAccountUpdating", "Admin/Account", "~/Views/Accounts/Update.aspx");
         }
     }
 }
