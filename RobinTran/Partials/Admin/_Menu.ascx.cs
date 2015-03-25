@@ -13,5 +13,11 @@ namespace RobinTran.Partials.Admin
         {
 
         }
+
+        protected void btSignOut_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("~/");
+        }
     }
 }
