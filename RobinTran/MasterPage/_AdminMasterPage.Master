@@ -2,7 +2,6 @@
 <%@ Register TagPrefix="Partial" TagName="Header" Src="~/Partials/_Header.ascx" %>
 <%@ Register TagPrefix="Partial" TagName="Menu" Src="~/Partials/Admin/_Menu.ascx" %>
 <%@ Register TagPrefix="Partial" TagName="Footer" Src="~/Partials/_Footer.ascx" %>
-<%@ Register TagPrefix="Partial" TagName="RightComponents" Src="~/Partials/_RightComponents.ascx" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -18,11 +17,10 @@
         <Partial:Header runat="server"></Partial:Header>
         <Partial:Menu runat="server"></Partial:Menu>
         <div id="container">
-            <div id="content">
+            <div id="AdminContent">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
-            <Partial:RightComponents runat="server"></Partial:RightComponents>
         </div>
         <Partial:Footer runat="server"></Partial:Footer>
     </form>

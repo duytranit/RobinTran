@@ -8,6 +8,7 @@ using System.Globalization;
 using System.Resources;
 using System.Reflection;
 using System.Threading;
+using Telerik.Web.UI;
 
 namespace RobinTran.Helpers
 {
@@ -28,6 +29,17 @@ namespace RobinTran.Helpers
 
             ResourceManager rm = new ResourceManager("Resources.RobinResource", Assembly.Load("App_GlobalResources"));
             return rm;
+        }
+
+        public void SetSequenceNumberColumn(RadGrid _radgrid, GridItemEventArgs _e, string _sequenceNumberColumnName)
+        {
+            if (_e.Item is GridDataItem)
+            {
+                int rowCounter = new int();
+                rowCounter = _radgrid.MasterTableView.PageSize * _radgrid.MasterTableView.CurrentPageIndex;
+                Label lbl = _e.Item.FindControl(_sequenceNumberColumnName) as Label;
+                lbl.Text = (_e.Item.ItemIndex + 1 + rowCounter).ToString();
+            }
         }
     }
 }

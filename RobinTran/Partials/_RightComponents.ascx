@@ -5,7 +5,7 @@
             <%= rm.GetString("rightWidgetChooseLanguage") %>
         </dt>
         <dd style="text-align:center;">
-            <asp:ImageButton ID="imgButtonVN" runat="server" Height="50px" ImageUrl="~/Content/images/VNFlag.png" Width="70px" OnClick="imgButtonVN_Click" />
+            <asp:ImageButton ID="imgButtonVN" runat="server" Height="50px" ImageUrl="~/Content/images/VNFlag.png" Width="50px" OnClick="imgButtonVN_Click" />
             <asp:ImageButton ID="imgButtonEN" runat="server" Height="50px" ImageUrl="~/Content/images/ENFlag.png" Width="50px" OnClick="imgButtonEN_Click" />
         </dd>
     </dl>

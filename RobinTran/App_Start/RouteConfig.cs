@@ -13,7 +13,7 @@ namespace RobinTran
             routes.EnableFriendlyUrls();
             routes.MapPageRoute("DefaultPage", "", "~/Default.aspx");
 
-            routes.MapPageRoute("AdminAccountUpdating", "Admin/Account", "~/Views/Accounts/Update.aspx");
+            routes.MapPageRoute("AdminAccountUpdating", "Admin/Account", "~/Views/Accounts/Index.aspx");
         }
     }
 }

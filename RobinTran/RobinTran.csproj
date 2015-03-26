@@ -162,6 +162,7 @@
     <Content Include="Scripts\jquery-2.1.3.min.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\Accounts\Index.aspx" />
     <Content Include="Views\Accounts\Update.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -291,6 +292,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Accounts\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Accounts\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Accounts\Update.aspx.cs">
       <DependentUpon>Update.aspx</DependentUpon>
