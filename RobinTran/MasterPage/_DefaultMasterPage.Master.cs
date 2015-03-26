@@ -5,14 +5,26 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using RobinTran.Models;
+using System.Resources;
 
 namespace RobinTran.MasterPage
 {
     public partial class _DefaultMasterPage : System.Web.UI.MasterPage
     {
+        private Helpers.PageHelper _pageHelper = new Helpers.PageHelper();
+        protected ResourceManager rm;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((Session["Language"] != null) && (Session["Language"].ToString().Equals("en-US")))
+            {
+                rm = _pageHelper.SetCulture("en-US");
+            }
+            else
+            {
+                rm = _pageHelper.SetCulture("vi-VN");
+            }
 
+            btSignIn.Text = rm.GetString("btSignIn");
         }
 
         protected void btSignIn_Click(object sender, EventArgs e)

@@ -4,36 +4,24 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Globalization;
 using System.Resources;
-using System.Reflection;
-using System.Threading;
 
 namespace RobinTran.MasterPage
 {
     public partial class _Menu : System.Web.UI.UserControl
     {
+        private Helpers.PageHelper _pageHelper = new Helpers.PageHelper();
+        protected ResourceManager rm;
         protected void Page_Load(object sender, EventArgs e)
         {
             if ((Session["Language"] != null) && (Session["Language"].ToString().Equals("en-US")))
             {
-                CultureInfo infor = new CultureInfo("en-US");
-                SetCulture(infor);
+                rm = _pageHelper.SetCulture("en-US");
             }
             else 
             {
-                CultureInfo infor = new CultureInfo("vi-VN");
-                SetCulture(infor);
+                rm = _pageHelper.SetCulture("vi-VN");
             }
-        }
-
-        private void SetCulture(CultureInfo _infor)
-        {
-            Thread.CurrentThread.CurrentCulture = _infor;
-            Thread.CurrentThread.CurrentUICulture = _infor;
-
-            ResourceManager rm = new ResourceManager("Resources.RobinResource", Assembly.Load("App_GlobalResources"));
-            btHome.Text = rm.GetString("mnHome");
             btSignIn.Text = rm.GetString("mnSignIn");
         }
     }

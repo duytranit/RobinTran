@@ -117,10 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btSignIn" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="lblEmail" xml:space="preserve">
+    <value>Thư điện tử</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="lblSignInTitle" xml:space="preserve">
+    <value>Đăng Nhập</value>
+  </data>
   <data name="mnHome" xml:space="preserve">
     <value>Trang Chủ</value>
   </data>
   <data name="mnSignIn" xml:space="preserve">
     <value>Đăng Nhập</value>
+  </data>
+  <data name="rightWidgetChooseLanguage" xml:space="preserve">
+    <value>CHỌN NGÔN NGỮ</value>
   </data>
 </root>

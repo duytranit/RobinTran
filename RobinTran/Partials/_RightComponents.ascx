@@ -1,7 +1,9 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="_RightComponents.ascx.cs" Inherits="RobinTran.Partials._RightComponents" %>
 <div id="content_right">
     <dl class="curved">
-        <dt>CHOOSE LANGUAGE</dt>
+        <dt>
+            <%= rm.GetString("rightWidgetChooseLanguage") %>
+        </dt>
         <dd style="text-align:center;">
             <asp:ImageButton ID="imgButtonVN" runat="server" Height="50px" ImageUrl="~/Content/images/VNFlag.png" Width="70px" OnClick="imgButtonVN_Click" />
             <asp:ImageButton ID="imgButtonEN" runat="server" Height="50px" ImageUrl="~/Content/images/ENFlag.png" Width="50px" OnClick="imgButtonEN_Click" />

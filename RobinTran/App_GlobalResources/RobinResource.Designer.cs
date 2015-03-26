@@ -61,6 +61,42 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sign in.
+        /// </summary>
+        internal static string btSignIn {
+            get {
+                return ResourceManager.GetString("btSignIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        internal static string lblEmail {
+            get {
+                return ResourceManager.GetString("lblEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string lblPassword {
+            get {
+                return ResourceManager.GetString("lblPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign In.
+        /// </summary>
+        internal static string lblSignInTitle {
+            get {
+                return ResourceManager.GetString("lblSignInTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         internal static string mnHome {
@@ -75,6 +111,15 @@ namespace Resources {
         internal static string mnSignIn {
             get {
                 return ResourceManager.GetString("mnSignIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CHOOSE LANGUAGE.
+        /// </summary>
+        internal static string rightWidgetChooseLanguage {
+            get {
+                return ResourceManager.GetString("rightWidgetChooseLanguage", resourceCulture);
             }
         }
     }

@@ -2,7 +2,9 @@
 <div id="menu">
     <ul id="nav">
         <li id="home">
-            <asp:LinkButton ID="btHome" runat="server" PostBackUrl="~/"></asp:LinkButton>
+            <a href="<%= ResolveUrl("~/") %>">
+                <%= rm.GetString("mnHome") %>
+            </a>
         </li>
         <li id="who" class="activelink"><a href="http://www.free-css.com/">About</a></li>
         <li id="prod"><a href="http://www.free-css.com/">Product</a></li>

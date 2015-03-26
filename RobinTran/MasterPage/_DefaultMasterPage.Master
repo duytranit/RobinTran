@@ -39,13 +39,13 @@
                         <button type="button" class="close" data-dismiss="modal">
                             <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
-                        <h4 class="modal-title">Sign in</h4>
+                        <h4 class="modal-title"><%= rm.GetString("lblSignInTitle") %></h4>
                     </asp:Panel>
                     <asp:Panel runat="server" class="modal-body" meta:resourcekey="PanelResource2">
                         <table>
                             <tr>
                                 <td>
-                                    Email:
+                                    <%= rm.GetString("lblEmail") %>:
                                 </td>
                                 <td>
                                     <asp:TextBox ID="txtEmail" runat="server" meta:resourcekey="txtEmailResource1"></asp:TextBox>
@@ -53,14 +53,14 @@
                             </tr>
                             <tr>
                                 <td>
-                                    Password:
+                                    <%= rm.GetString("lblPassword") %>:
                                 </td>
                                 <td>
                                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" meta:resourcekey="txtPasswordResource1"></asp:TextBox>
                                 </td>
                             </tr>
                         </table>
-                        <asp:Button ID="btSignIn" runat="server" Text="Sign in" OnClick="btSignIn_Click" 
+                        <asp:Button ID="btSignIn" runat="server" OnClick="btSignIn_Click" 
                             Style="margin-top: 20px;" meta:resourcekey="btSignInResource1"/>
                     </asp:Panel>
                     <!--<asp:Panel runat="server" class="modal-footer">
